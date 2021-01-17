@@ -1,0 +1,54 @@
+.conteiner{
+display: grid;
+max-width: 1200px;
+
+border: 1px solid red;
+margin: 0 auto;	
+	grid-template-areas:       "head head"
+	                                   "nav nav"
+									   "content aside1"
+									   "content aside2"
+									   "footer footer"
+}
+
+
+header, nav, article, .as1, .as2, footer{
+	border: 1px solid black;	
+}
+
+header{
+	grid-area: head;
+}
+nav{
+	grid-area: nav;
+	max-height: 15px;
+	
+	
+}
+
+article{
+	grid-area: content;
+}
+.as1{
+grid-area: aside1;	
+}
+.as2{
+grid-area: aside2;	
+}
+footer{
+	
+	grid-area: footer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

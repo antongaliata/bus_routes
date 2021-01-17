@@ -1,0 +1,275 @@
+body{
+	margin: 0px auto;
+	background-image: url(../img/cosmo1111.jpg);
+	
+	   
+}
+article{
+	border: 2px solid red;
+	background: #696969;
+	margin: 0px 0px 0px 100px;
+max-width: 750px;
+min-height: 650px;
+float: left;
+
+
+
+}
+
+header.block1{
+	background: #F8F8FF;	
+	border: 2px solid #9999;
+	width: 100%;
+	min-height:50px;
+	box-sizing: border-box;
+	margin: 0px;
+	
+}	
+
+div.block2{
+	border: 2px solid black;
+	background: #F5F5DC;
+	max-height: 250px;
+	margin: 10px 10px;	
+	width: 60%;
+	box-sizing: border-box;
+	float: left;
+	overflow: auto;
+	transform:rotate(12deg);
+
+}
+
+div.block3{
+	border: 2px solid blue;
+	background: #F5F5DC;
+	max-height: 150px;
+	width:35%;
+	box-sizing: border-box;
+	float: left;	
+	margin: 10px 0 110px 0px;	
+	overflow: auto;
+	
+	
+
+}
+div.block4{
+	border: 2px solid black;
+	background: #F5F5DC;
+	min-height: 200px;
+	width: 31.3%;
+	box-sizing: border-box;
+	float: left;
+	margin:0 10px 10px 10px;
+
+	
+}
+div.block5{
+	border: 2px solid black;
+	background: #F5F5DC;
+	min-height: 200px;
+	width: 31.3%;
+	box-sizing: border-box;
+	float: left;
+	margin:0 10px 10px 0px;
+	
+	
+}
+div.block6{
+	border: 2px solid black;
+	background: #F5F5DC;
+	min-height: 200px;
+	width: 31.3%;
+	box-sizing: border-box;
+	float: left;
+	
+}
+div.block7{
+border: 2px solid green;
+background:#A9A9A9;
+min-height: 100px;
+width:100%;
+box-sizing: border-box;
+clear: left;
+}
+ 
+               /* Кнопка вселенная
+ 
+a.button{
+border: 2px solid rgb(120, 120, 120);
+border-radius: 5px;
+padding: 10px;
+box-sizing: border-box;
+background: rgb(20, 20, 50);
+color: #fff;	
+text-decoration: none;
+font-size: 30px;
+display: block;
+width: 170px;
+height: 100px;
+text-align: center;
+margin: 52px ;
+}
+
+a.button:hover{
+border: 2px solid rgb(120, 120, 120);
+border-radius: 5px;
+padding: 10px;
+box-sizing: border-box;
+background: rgb(110, 120, 150);
+color: black;	
+text-decoration: none;
+font-size: 30px;
+display: block;
+width: 170px;
+height: 100px;
+text-align: center;
+margin: 52px ;
+position: relative;
+top: -4px;
+right: 14px;
+}
+*/
+
+/* КНОПКА МЕНЯЮЩАЯ РИСУНОК
+a.knopka{
+	background: url(../img/knopka.png);
+	display: block;
+	height: 65px;
+	width:100px;
+	padding-right:3px;
+	border:3px solid red;
+	position: relative;
+}
+a.knopka:hover{
+	background: url(../img/knopka.png);
+	display: block;
+	height: 65px;
+	width:104px;
+	background-position: 0 -65px;
+} */
+
+
+         /* МЕНЮ САЙТА*/
+
+ul.nav{
+	list-style-type: none;
+	display: inline;
+	margin-left: 50%;
+}
+
+a.navs{
+display: inline-block;
+	border-radius: 20px;
+	width: 100px;
+	padding: 10px;
+	margin-right: 0px;
+	background: #A9A9A9;
+	text-decoration: none;
+	color: #FFFAFA;
+font-family: 'Indie Flower', cursive;
+text-align: center;
+}
+
+a.navs:hover{
+display: inline-block;
+	border-radius: 20px;
+	width: 100px;
+	padding: 10px;
+	margin-right: 0px;
+	background: #696969;
+	text-decoration: none;
+	color: #000000;
+font-family: 'Indie Flower', cursive;
+text-align: center;
+position: relative;
+right: 3px;
+bottom: 3px;
+}
+
+li{
+	display: inline;
+	
+}
+
+                     /*------------Боковое меню---------*/
+ul.navs{
+min-width: 150px;
+min-height: 300px;
+margin: 100px 0; 
+padding: 0px;
+float: left;
+border: 1px solid black;
+background:#DCDCDC;
+
+
+
+
+
+}
+
+
+
+a.navs2{
+	display: block;
+	line-height: 50px;
+	width: 100px;
+	margin:7px ;
+	box-sizing: border-box;
+	background: #A9A9A9;
+	text-decoration: none;
+	color: #FFFAFA;
+	text-align: center;
+
+}
+a.navs2:hover{
+	display: block;
+	line-height: 50px;
+	width: 100px;
+	margin:7px 0px 7px 17px;
+	box-sizing: border-box;
+	background: #696969;
+	text-decoration: none;
+	color:#000000;
+	transform: scale(1.2);
+	transition-property:background, color, margin;
+	transition-duration: .8s, 1s; 
+	transition-delay: .1	s;
+
+}
+
+
+
+
+
+
+li.menu1{
+	display: block;
+	width: 100px;
+	
+	
+
+	
+}
+
+
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

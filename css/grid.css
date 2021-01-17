@@ -1,0 +1,56 @@
+.body{
+ background-image: url(../img/shah.jpg);
+background-repeat: no-repeat;
+	border: 1px solid red;
+	height: 505px;
+    width: 626px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+    align-items: center;	
+}
+
+
+.shah{
+	 
+	border: 3px solid black;
+	height: 476px;
+	width: 476px;
+	
+}
+
+.shah2{
+	display: grid;
+	grid-template-columns: repeat(8, 58.5px);
+	grid-template-rows: repeat( 8, 58.5px);
+	grid-gap: 2px;
+
+}
+
+.shah2>*{
+	background: blue;
+}
+
+
+.box1{
+	background:  red;
+	grid-column: 5;
+	grid-row: 6;
+	
+	
+}
+.box2{
+	background: green;
+	grid-column: 9/8;
+	grid-row: 7;
+	
+	
+	
+}
+
+
+
+
+
+
+
