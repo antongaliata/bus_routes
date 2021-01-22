@@ -23,11 +23,12 @@ function apiRequestHandler(link: string) {
 let directionsService: google.maps.DirectionsService
 let directionsRenderer: google.maps.DirectionsRenderer
 let map: google.maps.Map
+let service: any
 
 export function initMap(locations: Array<locationsType>) {
 
     const loader = new Loader({
-        apiKey: "AIzaSyC_B7FYGdGaaosiiHqVjXsn4JBvAvKDZpg",
+        apiKey: "AIzaSyC_B7FYGdGaaosiiHqVjXsn4JBvAvKDZpg" ,
         version: "weekly"
     });
 
@@ -40,15 +41,42 @@ export function initMap(locations: Array<locationsType>) {
         directionsRenderer = new google.maps.DirectionsRenderer()
         directionsRenderer.setMap(map);
 
-        const markers = locations.map((location: locationsType) => {
-            return new google.maps.Marker({
-                position: location
+
+
+        function callback(results: any, status: any) {
+            if (status === google.maps.places.PlacesServiceStatus.OK) {
+                for (var i = 0; i < results.length; i++) {
+                    createMarker(results[i]);
+                }
+            }
+        }
+        function createMarker(place:any) {
+            new google.maps.Marker({
+                map,
+                position: place.geometry.location,
             });
-        });
-        new MarkerClusterer(map, markers, {
-            imagePath:
-                "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
-        });
+        }
+
+        var request:any = {
+            location: locations,
+            radius: '50',
+            type: ['transit_station']
+        };
+
+        service = new google.maps.places.PlacesService(map);
+        service.nearbySearch(request, callback);
+
+
+
+        // const markers = locations.map((location: locationsType) => {
+        //     return new google.maps.Marker({
+        //         position: location
+        //     });
+        // });
+        // new MarkerClusterer(map, markers, {
+        //     imagePath:
+        //         "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
+        // });
     });
 }
 
